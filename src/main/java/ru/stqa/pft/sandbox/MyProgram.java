@@ -5,16 +5,18 @@ public class MyProgram
 
     public static void main (String[] args) {
 
-        Kvadrat ploschad = new Kvadrat(5);
+        Kvadrat plK = new Kvadrat(5, "Площадь квадрата со стороной ");
 
 
-        Pryamoug pl = new Pryamoug(4, 6);
+        Pryamoug plP = new Pryamoug(4,6, "Площадь прямоугольника со сторонами ");
+
+        Tochka distance = new Tochka(-3, -4);
 
 
-        String slovo = "Площадь фигуры со стороной ";
         hello("peple");
-        System.out.println(slovo + ploschad.storona + " = " + ploschad.plosch());
-        System.out.println(slovo + pl.storonaA + " и " + pl.storonaB + " = " + pl.plosch());
+        System.out.println(plK.figura + plK.storona + " = " + plK.plosch());
+        System.out.println(plP.figura + plP.storonaA + " и " + plP.storonaB + " = " + plP.plosch());
+        System.out.println("Дистанция между точками " + distance.rastoyanie());
     }
     public static void hello(String priv){
 
