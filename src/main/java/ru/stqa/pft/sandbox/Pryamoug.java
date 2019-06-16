@@ -9,4 +9,7 @@ public class Pryamoug {
         this.storonaA = storonaA;
         this.storonaB = storonaB;
     }
+    public double plosch() {
+        return this.storonaA * this.storonaB;
+    }
 }

@@ -6,5 +6,8 @@ public class Kvadrat {
     public Kvadrat(double storona){
         this.storona = storona; // this(ссылка на этот объект).атрибут = переменная, объявленная как аргумент функции
     }
+    public double plosch() {
+        return this.storona * this.storona;
+    }
 
 }
