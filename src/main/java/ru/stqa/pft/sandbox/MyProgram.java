@@ -5,25 +5,27 @@ public class MyProgram
 
     public static void main (String[] args) {
 
-        double storonaK = 6;
-        double a = 4;
-        double b = 6;
+        Kvadrat ploschad = new Kvadrat(6);
+
+
+        Pryamoug pl = new Pryamoug(4, 6);
+
 
         String slovo = "Площадь фигуры со стороной ";
         hello("peple");
-        System.out.println(slovo + storonaK + " = " + plosch(storonaK));
-        System.out.println(slovo + a + " и " + b + " = " + plosch(a, b));
+        System.out.println(slovo + ploschad.storona + " = " + plosch(ploschad));
+        System.out.println(slovo + pl.storonaA + " и " + pl.storonaB + " = " + plosch(pl));
     }
     public static void hello(String priv){
 
         System.out.println("Hi " + priv);
     }
-    public static double plosch(double storonaKvadrata) {
-        return storonaKvadrata * storonaKvadrata;
+    public static double plosch(Kvadrat ploschad) {
+        return ploschad.storona * ploschad.storona;
     }
 
-    public static double plosch(double storonaA, double storonaB) {
-        return storonaA * storonaB;
+    public static double plosch(Pryamoug pl) {
+        return pl.storonaA * pl.storonaB;
     }
 }
 
