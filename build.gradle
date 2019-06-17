@@ -1,9 +1,17 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = "MyProgram"
+mainClassName = "ru.stqa.pft.sandbox.MyProgram"
 
 task getHomeDir {
     doLast {
         println gradle.gradleHomeDir
     }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.testng:testng:7.0.0-beta4")
 }
