@@ -10,7 +10,7 @@ public class MyProgram
 
         Pryamoug plP = new Pryamoug(4,6, "Площадь прямоугольника со сторонами ");
 
-        Tochka distance = new Tochka(-3, -4);
+        Tochka distance = new Tochka(-1, 1, 2, 5);
 
 
         hello("peple");
